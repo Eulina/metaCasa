@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('index');
 });
+
+
+//Backend rotas . . . . . . . . . . . . . . . . . .
+ROute::get('/admin', 'AdminController@admin');
+Route::get('/backend','AdminController@index');
